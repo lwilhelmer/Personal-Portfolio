@@ -94,13 +94,21 @@ footer a:hover {
 
 /* RESUME
 ------------------------------------*/
-.resume header::before {
-    background: url(../images/background.jpg) center;
-    background-size: cover;
-    content: "";
-    display: block;
-    height: 375px;
+.resume-header {
+  display: flex;           /* arrange items horizontally */
+  align-items: center;     /* vertically center image and text */
+  gap: 20px;               /* space between image and text */
+  padding: 20px 0;         /* optional spacing */
 }
+
+.profile-pic {
+  width: 420px;            /* fixed size for portrait */
+  height: 420px;           /* match width for square */
+  margin-left: 50px;
+  object-fit: cover;       /* crop nicely if image not square */
+  border-radius: 50%;      /* makes it circular */
+}
+
 .resume-section {
     margin-bottom: 50px;
 }
