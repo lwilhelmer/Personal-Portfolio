@@ -95,18 +95,18 @@ footer a:hover {
 /* RESUME
 ------------------------------------*/
 .resume-header {
-  display: flex;           /* arrange items horizontally */
-  align-items: center;     /* vertically center image and text */
-  gap: 20px;               /* space between image and text */
-  padding: 20px 0;         /* optional spacing */
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+  padding: 20px 0;        
 }
 
 .profile-pic {
-  width: 420px;            /* fixed size for portrait */
-  height: 420px;           /* match width for square */
+  width: 420px;           
+  height: 420px;          
   margin-left: 50px;
-  object-fit: cover;       /* crop nicely if image not square */
-  border-radius: 50%;      /* makes it circular */
+  object-fit: cover;      
+  border-radius: 50%;   
 }
 
 .resume-section {
