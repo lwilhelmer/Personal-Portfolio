@@ -5,10 +5,10 @@ let yPos = 0;
 let easing = 0.5;
 
 function setup(){
-    canvas = createCanvas(windowWidth, windowHeight);
-    canvas.position(0,0);
-    // canvas.style("z-index", -2)
-    // background(225);
+  canvas = createCanvas(windowWidth, windowHeight);
+  canvas.position(0, 0);
+  canvas.style("z-index", "-1");
+  canvas.style("pointer-events", "none");
 }
 
 function windowResized(){
