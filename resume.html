@@ -1,151 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume | Lea Corini, Digital Artist</title>
-    <meta
-      name="description"
-      content="Lea Corini is a digital artist working in web design, illustration, and 3d modeling."
-    />
-    <meta
-      name="keywords"
-      content="Lea Corini, Digital Artist, 3d Modeler, Illustrator"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <!-- <body class="resume">
-    <a class="btn download-link" href="Resume-LeaCorini.pdf" download
-      >Download PDF</a -->
-    >
-    <!-- //  INTRO  // -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume | Lea Corini – Digital Artist & Web Designer</title>
+  <meta name="description" content="Resume of Lea Corini, digital artist and web designer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
 
-    <!-- NAV BAR -->
-    <nav class="navbar">
-      <div class="logo">
-        <a href="#">Lea Corini</a>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">Lea Corini</a></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html" class="active">Resume</a></li>
+    </ul>
+    <div class="menu-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+
+  <!-- RESUME HEADER -->
+  <header class="resume-header">
+    <img src="images/portrait.jpg" alt="Lea Corini" class="profile-pic">
+    <div class="content-wrapper">
+      <h1>Lea Corini</h1>
+      <h2>Digital Artist & Web Designer</h2>
+    </div>
+  </header>
+
+  <main class="content-wrapper">
+    <!-- PROFILE -->
+    <section class="resume-section profile resume-card">
+      <h2>Profile</h2>
+      <p>Skilled in web development, illustration, and 3D modeling. Proficient in HTML, CSS, JavaScript, Python, and Adobe Creative Suite (Photoshop, Illustrator, Premiere Pro, Blender). Passionate about clean, functional design with a creative approach to problem-solving.</p>
+    </section>
+
+    <!-- WORK EXPERIENCE -->
+    <section class="resume-section resume-card">
+      <h2>Work Experience</h2>
+      
+      <div class="work-item">
+        <div class="work-details">
+          <h3>Nanny</h3>
+          <p>2021 – Present</p>
+        </div>
+        <div class="work-summary">
+          <p>Responsible for household operations, childcare, and maintaining organized routines.</p>
+        </div>
       </div>
-      <ul class="nav-links">
-        <li><a href="index.html" >Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="#"class="active" >Resume</a></li>
-      </ul>
-      <div class="menu-toggle">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+
+      <div class="work-item">
+        <div class="work-details">
+          <h3>Au Pair</h3>
+          <p>April 2019 – August 2021</p>
+        </div>
+        <div class="work-summary">
+          <p>Supported a family in daily childcare, education, and household management.</p>
+        </div>
       </div>
-    </nav>
 
-    <header class="resume-header">
-      <img
-        src="images/portrait.jpg"
-        alt="Resume Header Image"
-        class="profile-pic"
-      />
+      <p>Full work history available on <a href="https://ca.linkedin.com/in/lea-wilhelmer-0101" target="_blank">LinkedIn</a>.</p>
+    </section>
 
-      <div class="content-wrapper">
-        <h1>Lea Corini</h1>
-        <h2>Digital Media Art Student</h2>
+    <!-- EDUCATION -->
+    <section class="resume-section resume-card">
+      <h2>Education</h2>
+      
+      <div class="education-item">
+        <h3>UC Berkeley Extension</h3>
+        <p>Full Stack Software Development, 2020–2021</p>
       </div>
-    </header>
+      <div class="education-item">
+        <h3>West Valley College – Saratoga, California</h3>
+        <p>Computer Science, 2021-2024</p>
+      </div>
+      <div class="education-item">
+        <h3>San Jose State University – San Jose, California</h3>
+        <p>Bachelor of Fine Arts, 2024–2026</p>
+        <p>Digital Media Art</p>
+      </div>
+    </section>
+  </main>
 
-    <main class="content-wrapper">
-      <!-- //  PROFILE  // -->
-      <section class="resume-section">
-        <h2>Profile</h2>
-        <p>
-          I have been interested in Web Development and Marketing. Skilled in
-          HTML, CSS, JavaScript, and Python, with experience using Photoshop,
-          Illustrator, Premiere Pro, and Blender.
-        </p>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Lea Corini</p>
+    <ul class="socials">
+      <li><a href="https://www.youtube.com/@leawilhelmer" target="_blank"><img src="images/icon-logo-youtube.png" alt="YouTube"></a></li>
+      <li><a href="https://ca.linkedin.com/in/lea-wilhelmer-0101" target="_blank"><img src="images/icon-logo-linkedin.png" alt="LinkedIn"></a></li>
+    </ul>
+  </footer>
 
-        <a href="index.html">Back to homepage</a>
-      </section>
-
-      <!-- //  WORK EXPERIENCE  // -->
-      <section class="resume-section">
-        <!-- Start content edits below this line.  -->
-        <h2>Work Experience</h2>
-        <p>
-          My complete work history is available on
-          <a
-            href="https://ca.linkedin.com/in/lea-wilhelmer-0101"
-            target="_blank"
-            >LinkedIn</a
-          >.
-        </p>
-
-        <section class="work-item">
-          <div class="work-details">
-            <h3>Nanny</h3>
-            <p>2021 - Present</p>
-          </div>
-
-          <div class="work-summary">
-            <p>Household Operations</p>
-          </div>
-        </section>
-
-        <section class="work-item">
-          <div class="work-details">
-            <h3>Au Pair</h3>
-            <p>April 2019 - August 2021</p>
-          </div>
-        </section>
-      </section>
-
-      <!-- //  EDUCATION & CERTIFICATIONS  // -->
-      <section class="resume-section">
-        <!-- Start content edits below this line.  -->
-        <h2>Education</h2>
-
-        <section class="education-item">
-          <h3>UC Berkeley Extension</h3>
-          <p>Full Stack Software Development, 2020-2021</p>
-        </section>
-
-        <section class="education-item">
-          <h3>West Valley College - Saratoga, California</h3>
-          <p>Computer Science</p>
-        </section>
-
-        <section class="education-item">
-          <h3>San Jose State University - San Jose, California</h3>
-          <p>Bachelor of Fine Arts, 2024-2026</p>
-          <p>Digital Media Art</p>
-        </section>
-      </section>
-    </main>
-
-    <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
-    <footer>
-      <p>
-        © 2025 Lea Corini |
-        <a href="mailto:leawilhelmer@gmail.com">leawilhelmer@gmail.com</a>
-      </p>
-
-      <ul class="socials">
-        <li>
-          <a href="https://www.youtube.com/@leawilhelmer" target="_blank"
-            ><img src="images/icon-logo-youtube.png" alt="My YouTube channel"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="https://ca.linkedin.com/in/lea-wilhelmer-0101"
-            target="_blank"
-            ><img src="images/icon-logo-linkedin.png" alt="My LinkedIn profile"
-          /></a>
-        </li>
-      </ul>
-    </footer>
-    <script src="js/main.js"></script>
-  </body>
+  <script src="js/main.js"></script>
+</body>
 </html>

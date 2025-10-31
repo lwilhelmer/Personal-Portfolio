@@ -3,38 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume | Lea Corini, Digital Artist</title>
+    <title>Projects | Lea Corini – Digital Artist & Web Designer</title>
     <meta
       name="description"
-      content="Lea Corini is a digital artist working in web design, illustration, and 3d modeling."
-    />
-    <meta
-      name="keywords"
-      content="Lea Corini, Digital Artist, 3d Modeler, Illustrator"
+      content="Portfolio of projects by Lea Corini, digital artist and web designer."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <!-- <body class="resume">
-    <a class="btn download-link" href="Resume-LeaCorini.pdf" download
-      >Download PDF</a -->
-    >
-    <!-- //  INTRO  // -->
-
-    <!-- NAV BAR -->
+  <body>
+    <!-- NAVBAR -->
     <nav class="navbar">
-      <div class="logo">
-        <a href="#">Lea Corini</a>
-      </div>
+      <div class="logo"><a href="index.html">Lea Corini</a></div>
       <ul class="nav-links">
-        <li><a href="index.html" >Home</a></li>
-        <li><a href="#"class="active">Projects</a></li>
-        <li><a href="resume.html" >Resume</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
       </ul>
       <div class="menu-toggle">
         <span class="bar"></span>
@@ -43,99 +32,82 @@
       </div>
     </nav>
 
-    
-      <!-- //  PROJECTS  // -->
-      <section class="resume-section">
-        <h5>Projects</h5>
-
-        <div class="project-wrapper">
-          <section class="project-item">
-            <img src="images/RENDER.png" alt="Image by Lea Corini" />
+    <!-- PROJECTS SECTION -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img
+            src="images/RENDER.png"
+            alt="Decoded by Lea - Blender Experiment"
+          />
+          <div class="project-info">
             <h3>Decoded by Lea</h3>
             <p>
-              A random Blender Project to test out different brushes and add ons
-              in Blender.
+              Blender experiment exploring custom brushes and procedural
+              texturing.
             </p>
-          </section>
-
-          <section class="project-item">
-            <img src="images/RENDERChibi.png" alt="Image by Lea Corini" />
-            <h3>Decoded by Lea</h3>
-            <p>Chibi Character in Blender</p>
-          </section>
-
-          <section class="project-item">
-            <img src="images/RENDER_CHIBI_DEMO.png" alt="Image by Lea Corini" />
-            <h3>Decoded by Lea</h3>
-            <p>Chibi Character in Blender</p>
-          </section>
-
-          <section class="project-item">
-            <img src="images/RENDER_PROJECT.png" alt="Image by Lea Corini" />
-            <h3>Decoded by Lea</h3>
-            <p>Chibi Character in Blender</p>
-          </section>
-
-          <iframe
-            src="https://lwilhelmer.github.io/game/"
-            width="600"
-            height="750"
-            style="border: none"
-          >
-          </iframe>
-
-          <section class="project">
-            <h5>Cooking Lasagna</h5>
-            <h4>
-              A fun way to help you cook lasagna. I built this using HTML, CSS,
-              and JavaScript.
-            </h4>
-
-            <iframe
-              src="https://lwilhelmer.github.io/Cooking-Lasagna/"
-              width="800"
-              height="600"
-              style="
-                border: none;
-                border-radius: 12px;
-                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-              "
-            >
-            </iframe>
-          </section>
-
-          <section class="project-item">
-            <h4>
-              More Projects can be found on
-              <a href="https://github.com/lwilhelmer/">Github</a>
-            </h4>
-          </section>
+          </div>
         </div>
-      </section>
+        <div class="project-card">
+          <img src="images/RENDERChibi.png" alt="Chibi Character in Blender" />
+          <div class="project-info">
+            <h3>Chibi Character</h3>
+            <p>3D chibi character modeled and rendered in Blender.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/RENDER_PROJECT.png" alt="Blender Project" />
+          <div class="project-info">
+            <h3>Blender Project</h3>
+            <p>Creative exploration of modeling and texturing techniques.</p>
+          </div>
+        </div>
+        <section
+          class="project-item interactive"
+          data-url="https://lwilhelmer.github.io/game/">
+          <h3>My Game</h3>
+          <p>Click to play full screen</p>
+        </section>
 
+        <section
+          class="project-item interactive"
+          data-url="https://lwilhelmer.github.io/Cooking-Lasagna/">
+          <h3>Learn How to Cook Lasagna</h3>
+          <p>Click to get full screen</p>
+        </section>
 
-    <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
-    <footer>
-      <p>
-        © 2025 Lea Corini |
-        <a href="mailto:leawilhelmer@gmail.com">leawilhelmer@gmail.com</a>
+      </div>
+      <p class="more-projects">
+        More projects on
+        <a href="https://github.com/lwilhelmer/" target="_blank">GitHub</a>.
       </p>
+    </section>
 
+    <div id="modal" class="modal">
+      <span class="close">&times;</span>
+      <iframe id="modal-iframe" src="" frameborder="0"></iframe>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 Lea Corini</p>
       <ul class="socials">
         <li>
           <a href="https://www.youtube.com/@leawilhelmer" target="_blank"
-            ><img src="images/icon-logo-youtube.png" alt="My YouTube channel"
+            ><img src="images/icon-logo-youtube.png" alt="YouTube"
           /></a>
         </li>
         <li>
           <a
             href="https://ca.linkedin.com/in/lea-wilhelmer-0101"
             target="_blank"
-            ><img src="images/icon-logo-linkedin.png" alt="My LinkedIn profile"
+            ><img src="images/icon-logo-linkedin.png" alt="LinkedIn"
           /></a>
         </li>
       </ul>
     </footer>
+
     <script src="js/main.js"></script>
   </body>
 </html>

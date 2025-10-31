@@ -3,33 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lea Corini, Digital Media Artist</title>
+    <title>Lea Corini – Digital Artist & Web Designer</title>
     <meta
       name="description"
-      content="Lea Corini is a digital artist working in web design, illustration, and 3d modeling."
-    />
-    <meta
-      name="keywords"
-      content="Lea Corini, Digital Artist, 3d Modeler, Illustrator"
+      content="Lea Corini is a digital artist and web designer specializing in web development, illustration, and 3D modeling."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/addons/p5.sound.min.js"></script>
   </head>
-  <body class="home">
-    <!-- NAV BAR -->
+  <body>
+    <!-- NAVBAR -->
     <nav class="navbar">
       <div class="logo">
-        <a href="#">Lea Corini</a>
+        <a href="index.html">Lea Corini</a>
       </div>
       <ul class="nav-links">
-        <li><a href="#" class="active">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="resume.html">Resume</a></li>
       </ul>
@@ -40,64 +34,118 @@
       </div>
     </nav>
 
-    <!-- //  INTRO  // -->
-    <div class="content-wrapper">
-      <div class="content-bg">
-        <header>
-          <!-- Start content edits below this line. -->
-          <h1>Lea Corini</h1>
-          <h2>Digital Media Art Student</h2>
-
-          <!-- End content edits here. -->
-        </header>
-
-        <!-- //  ABOUT ME  // -->
-        <main>
-          <p>
-            I’m a web developer and digital media artist originally from
-            Austria, now based in California. My work focuses on simplicity,
-            structure, and clarity — whether I’m coding a website or designing a
-            visual layout. I like building clean, functional designs that make
-            information easy to navigate and enjoyable to experience. My
-            background in art and digital media gives me a creative approach to
-            solving technical problems and designing with intention. If you are
-            interested in my YouTube series
-            <a href="https://www.youtube.com/@leawilhelmer" target="_blank"
-              >Youtube Videos by Lea</a
-            >.
-          </p>
-
-          <p>
-            To learn more about my work history, check out my
-            <a href="resume.html"> resume</a>. Thanks for stopping by!
-          </p>
-        </main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Lea Corini</h1>
+        <h2>Digital Artist & Web Designer</h2>
+        <a href="#projects" class="btn">View My Work</a>
       </div>
-    </div>
-    <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
-    <footer>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section class="about" id="about">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            I'm a digital artist and web designer originally from Austria, now
+            based in California. I create clean, functional designs that combine
+            creativity and clarity — from web development to illustration and 3D
+            modeling.
+          </p>
+          <p>
+            Check out my <a href="resume.html">resume</a> or my
+            <a href="https://www.youtube.com/@leawilhelmer" target="_blank"
+              >YouTube channel</a
+            >
+            to see more of my work.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="images/portrait.jpg" alt="Lea Corini" />
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img
+            src="images/RENDER.png"
+            alt="Decoded by Lea - Blender Experiment"
+          />
+          <div class="project-info">
+            <h3>Decoded by Lea</h3>
+            <p>
+              Blender experiment exploring custom brushes and procedural
+              texturing.
+            </p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/RENDERChibi.png" alt="Chibi Character in Blender" />
+          <div class="project-info">
+            <h3>Chibi Character</h3>
+            <p>3D chibi character modeled and rendered in Blender.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/RENDER_PROJECT.png" alt="Blender Project" />
+          <div class="project-info">
+            <h3>Blender Project</h3>
+            <p>Creative exploration of modeling and texturing techniques.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <iframe
+            src="https://lwilhelmer.github.io/game/"
+            title="Web Game by Lea"
+          ></iframe>
+        </div>
+      </div>
+      <p class="more-projects">
+        More projects on
+        <a href="https://github.com/lwilhelmer/" target="_blank">GitHub</a>.
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
       <p>
-        © 2025 by Lea Corini |
+        Email:
         <a href="mailto:leawilhelmer@gmail.com">leawilhelmer@gmail.com</a>
       </p>
+      <p>
+        LinkedIn:
+        <a href="https://ca.linkedin.com/in/lea-wilhelmer-0101" target="_blank"
+          >/in/lea-wilhelmer-0101</a
+        >
+      </p>
+    </section>
 
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 Lea Corini</p>
       <ul class="socials">
         <li>
           <a href="https://www.youtube.com/@leawilhelmer" target="_blank"
-            ><img src="images/icon-logo-youtube.png" alt="My YouTube channel"
+            ><img src="images/icon-logo-youtube.png" alt="YouTube"
           /></a>
         </li>
         <li>
           <a
             href="https://ca.linkedin.com/in/lea-wilhelmer-0101"
             target="_blank"
-            ><img src="images/icon-logo-linkedin.png" alt="My LinkedIn profile"
+            ><img src="images/icon-logo-linkedin.png" alt="LinkedIn"
           /></a>
         </li>
       </ul>
     </footer>
 
     <script src="js/main.js"></script>
-    <script src="js/sketch.js"></script>
   </body>
 </html>
